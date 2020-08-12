@@ -1,25 +1,36 @@
 # Naiades
 ## Búsqueda laboral
-### Ejercicio
+### Ejercicios
 
 #### Modalidad
 Para resolver estos ejercicios vas a necesitar tener una cuenta en GitHub.
+
 Si estás viendo esto, es porque ya la tenés y te dimos acceso de solo lectura a este repositorio privado.
+
 Ahora tenés que hacer un *fork* de este repo. Desde tu máquina, cloná ese repo (tu *fork*) para trabajar ahí.
+
 Cuando resuelvas los ejercicios, es importante que **no hagas un _pull request_**, así mantenemos tu código en tu repo y no lo pueden ver los demás candidatos.
+
 Subí (*push*) los ejercicios resueltos a tu repo y danos acceso de lectura (`Settings > Manage Access`) para el usuario `lucianoamor`, así podemos corregirlos.
 
 #### Contexto
 La idea es simular un pequeño sistema que guarde en una base de datos algunos campos básicos de usuarios.
+
 Consta de una vista y un formulario de carga.
+
 En este repo vas a encontrar un archivo `sql`. Con eso vas a poder crear una base de datos en tu `localhost` para poder hacer el ejercicio.
 
 #### Aclaraciones
 La vista debe cargarse a través de ajax.
+
 El formulario debe enviarse a través de ajax.
+
 Se puede usar jQuery (está en el repo) para el javascript, pero no otras librerías.
+
 No se pueden agregar librerías al repositorio.
+
 El código PHP no debe usar funciones, clases o frameworks externos.
+
 Se valorarán todas las explicaciones y justificaciones que se incluyan como comentarios en el código.
 
 #### Requerimientos
