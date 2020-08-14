@@ -28,6 +28,8 @@ include("config/config.php");
                             <thead>
                                 <tr>
                                     <th>Nombre</th>
+                                    <th>Apellido</th>
+                                    <th>Fecha</th>
                                 </tr>
                             </thead>
                             <tbody></tbody>
@@ -38,5 +40,21 @@ include("config/config.php");
         </div>
         <script src="assets/javascripts/jquery.min.js"></script>
         <script src="assets/javascripts/bootstrap.min.js"></script>
+        <script type="text/javascript">
+            $.get( "ax/vista.php", function( data ) {
+                if(data){
+                    for (var i = data.length - 1; i >= 0; i--) {
+                        $( ".table tbody" )
+                        .append("<tr><td>" + data[i].nombre+"</td>" +
+                        "<td>" + data[i].apellido+"</td>"+
+                        "<td>" + convertDateFormat(data[i].fecha)+"</td></tr>")
+                    }
+                }
+            });
+           function convertDateFormat(string) {
+              var info = string.split('-');
+              return info[2] + '/' + info[1] + '/' + info[0];
+            }
+        </script>
     </body>
 </html>
